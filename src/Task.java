@@ -1,8 +1,9 @@
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.List;
 
 public class Task {
-private String fisier;
+    private String fisier;
 
     public Task(String fisier) {
         this.fisier = fisier;
@@ -13,7 +14,17 @@ private String fisier;
         Input input;
         input = date.cindata();
         int m = input.getM();
-        List<Integer> array = input.getArray();
-    
+        List<Integer> numbers = input.getArray();
+        int n = numbers.size();
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < n; i++) {
+            map.put(numbers.get(i), i);
+        }
+        for (int i = 0; i < n; i++) {
+            int x = numbers.get(i) - m;
+            if (map.get(x) != null) {
+                System.out.println("indexul: " + i + " si indexul: " + map.get(x) + " cu valorile: " + numbers.get(i) + " si " + x);
+            }
+        }
     }
 }

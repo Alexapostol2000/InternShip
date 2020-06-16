@@ -19,12 +19,11 @@ public class Data {
         while (scanner.hasNext()) {
             if (scanner.hasNextInt()) {
                 integers.add(scanner.nextInt());
-            }
-            else {
+            } else {
                 scanner.next();
             }
         }
-        Input input = new Input(m,integers);
-    return input;
+        Input input = new Input(m, integers);
+        return input;
     }
 }
