@@ -16,10 +16,7 @@ public class Task {
         int m = input.getM();
         List<Integer> numbers = input.getArray();
         int n = numbers.size();
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 0; i < n; i++) {
-            map.put(numbers.get(i), i);
-        }
+        HashMap<Integer, Integer> map = input.getMap();
         for (int i = 0; i < n; i++) {
             int x = numbers.get(i) - m;
             if (map.get(x) != null) {

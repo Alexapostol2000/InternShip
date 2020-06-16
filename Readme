@@ -1,0 +1,17 @@
+In implementare am folosit un map si un array de elemente.
+Citesc datele cu ajutorul clasei Input pe care le retin intr-o clasa speciala data care are un camp m  o lista
+de elemente si map-ul creat.
+In clasa task:
+->  apelez functia cindata din clasa Data ;
+->  interez prin lista de elemente, si calculez pentru ficare element din array un x care este egal cu
+    valoarea de pe pozitia respectiva din array - valuarea m ;
+->  caut in map elementul x , daca acesta exista afisez perechea de numere ;
+
+Complexitate temporala : O(N)
+Complexitatea spatiala : O(N)
+
+Complexitatea temporala e data de parcurgerea elementelor din array, (cautarea in map fiind O(1));
+Complexitatea spatiala e data de retinerea arrayu-lui si a map-ului;
+
+Pot aparea probleme in cazul cheilor duplicate insa nefiind specificat in enunt am ales varianta cea mai eficienta din
+punct de vedere temporal.
