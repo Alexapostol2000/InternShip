@@ -17,19 +17,19 @@ public class Data {
         Scanner scanner = new Scanner(file);
         List<Integer> integers = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        int i=0;
+        int i = 0;
         int m = scanner.nextInt();
         while (scanner.hasNext()) {
             if (scanner.hasNextInt()) {
                 int x = scanner.nextInt();
-                map.put(x,i);
+                map.put(x, i);
                 integers.add(x);
                 i++;
             } else {
                 scanner.next();
             }
         }
-        Input input = new Input(m, integers,map);
+        Input input = new Input(m, integers, map);
         return input;
     }
 }

@@ -2,9 +2,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Input {
+    HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
     private int m;
     private List<Integer> array;
-    HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
 
     public Input(int m, List<Integer> array, HashMap<Integer, Integer> map) {
