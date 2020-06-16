@@ -11,10 +11,11 @@ public class Data {
         this.fisier = fisier;
     }
 
-    public List <Integer> cindata() throws FileNotFoundException {
+    public Input cindata() throws FileNotFoundException {
         File file = new File(fisier);
         Scanner scanner = new Scanner(file);
         List<Integer> integers = new ArrayList<>();
+        int m = scanner.nextInt();
         while (scanner.hasNext()) {
             if (scanner.hasNextInt()) {
                 integers.add(scanner.nextInt());
@@ -23,6 +24,7 @@ public class Data {
                 scanner.next();
             }
         }
-        return integers;
+        Input input = new Input(m,integers);
+    return input;
     }
 }
